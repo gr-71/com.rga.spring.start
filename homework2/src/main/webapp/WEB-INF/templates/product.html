@@ -20,6 +20,12 @@
         <td>Price</td>
         <td th:text="${product.price}">10.22</td>
     </tr>
+    <tr>
+        <td>Delete</td>
+        <td><button th:href="${'/products/delete/' + ${product.id}}" type="submit">OK</button></td>
+    </tr>
+
+
 </table>
 
 </body>

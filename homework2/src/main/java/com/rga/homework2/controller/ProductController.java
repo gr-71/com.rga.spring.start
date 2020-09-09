@@ -60,9 +60,10 @@ public class ProductController {
         return "redirect:/products/" + savedProduct.getId();
     }
 
-    // Удаление продукта по ID
-    @GetMapping("/products/delete/{id}")
-    public String deleteProductById (@PathVariable("id") Long id){
+    // http://localhost:8080/app/products/id/delete - GET
+    @RequestMapping(value = "/{id}/delete", method = RequestMethod.GET)
+    @ResponseBody
+    public String deleteProductById(@PathVariable Long id){
         productService.deleteProductById(id);
         return "redirect:/products";
     }

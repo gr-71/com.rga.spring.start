@@ -42,11 +42,4 @@ public class ProductServiceImpl {
     public void deleteProductById (Long id){
         productRepo.deleteById(id);
     }
-
-    public void removeById(Long id){
-        productRepo.remove(id);
-    }
-
-
-
 }

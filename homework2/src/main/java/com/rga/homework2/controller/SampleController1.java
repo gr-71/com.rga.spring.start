@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/example1")
 public class SampleController1 {
 
+    @RequestMapping(value = "/hi", method = RequestMethod.GET)
+    public String hi(Model model){
+        model.addAttribute("message", "Hello, World!");
+        return "index";
+    }
+
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello(Model model){
         return "index";

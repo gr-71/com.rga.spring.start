@@ -47,9 +47,4 @@ public class ProductRepoImpl {
             }
         }
     }
-
-    public void remove(Long id){
-        repo.remove(id);
-    }
-
 }
