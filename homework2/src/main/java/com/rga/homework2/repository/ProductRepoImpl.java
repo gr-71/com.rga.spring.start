@@ -38,7 +38,7 @@ public class ProductRepoImpl {
         return product;
     }
 
-// Добавил удаление продукта по ID :
+// Удаление продукта по ID :
     public void deleteById (Long id){
         for (int i = 0; i < repo.size(); i++) {
             if (repo.get(i).getId().equals(id)){

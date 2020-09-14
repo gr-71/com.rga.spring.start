@@ -38,7 +38,7 @@ public class ProductServiceImpl {
         return productRepo.save(product);
     }
 
-    // Добавил метод удаления продукта по ID
+    // Метод удаления продукта по ID
     public void deleteProductById (Long id){
         productRepo.deleteById(id);
     }

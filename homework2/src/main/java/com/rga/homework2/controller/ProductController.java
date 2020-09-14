@@ -60,6 +60,7 @@ public class ProductController {
         return "redirect:/products/" + savedProduct.getId();
     }
 
+    // Удаление продукта
     // http://localhost:8080/app/products/id/delete - GET
     @RequestMapping(value = "/{id}/delete", method = RequestMethod.GET)
     @ResponseBody
