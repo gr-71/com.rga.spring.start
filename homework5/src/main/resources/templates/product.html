@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Id</td>
+            <td th:text="${product.id}">id</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td th:text="${product.title}">Title</td>
+        </tr>
+        <tr>
+            <td>price</td>
+            <td th:text="${product.price}">Price</td>
+        </tr>
+        <tr>
+            <td>Link</td>
+            <td><a th:href="@{/products/delete?(id=${product.id})}">delete</a></td>
+        </tr>
+    </table>
+</body>
+</html>
